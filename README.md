@@ -5,7 +5,7 @@
 **Μάθημα:** Διαχείριση Δεδομένων Μεγάλης Κλίμακας  
 **Περιβάλλον:** Apache Spark 3.5.8, Kubernetes (lab cluster), HDFS
 
-**GitHub:** https://github.com/kerkyradim/kerkyradim  
+**GitHub:** https://github.com/kerkyradim/bigdata-dsml  
 Πλήρης αναφορά: [`report/REPORT.md`](report/REPORT.md)
 
 ## Δομή αποθετηρίου
