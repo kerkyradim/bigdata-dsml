@@ -5,6 +5,7 @@
 **Μάθημα:** Διαχείριση Δεδομένων Μεγάλης Κλίμακας  
 **Περιβάλλον:** Apache Spark 3.5.8, Kubernetes (lab cluster), HDFS
 
+**GitHub:** https://github.com/kerkyra/dsml00289-bigdata  
 Πλήρης αναφορά: [`report/REPORT.md`](report/REPORT.md)
 
 ## Δομή αποθετηρίου
@@ -45,7 +46,7 @@ dsml00289-bigdata/
 
 ```bash
 source ~/bigdata-env.sh
-cd ~/bigdata-dsml   # ή clone αυτού του repo
+cd ~/dsml00289-bigdata   # clone αυτού του repo
 
 spark-submit \
   --conf spark.executor.instances=2 \
