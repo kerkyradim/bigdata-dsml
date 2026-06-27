@@ -1,0 +1,30 @@
+=== Q1 CSV vs Parquet (2 exec, 1 core, 2g) ===
+
+--- CSV baseline (Q1_df.py, from Q1_times.txt) ---
+q1_df_2exec_run1 QUERY_ELAPSED_SECONDS=63.576
+q1_df_2exec_run2 QUERY_ELAPSED_SECONDS=86.606
+q1_df_2exec_run3 QUERY_ELAPSED_SECONDS=56.607
+CSV median=63.576
+
+--- Parquet (Q1_df_parquet.py) ---
+q1_df_parquet_run1 pod=q1-df-parquet-py-de0ed29f0b2f039e-driver
+INPUT_FORMAT=parquet
+QUERY_ELAPSED_SECONDS=15.997
+
+q1_df_parquet_run2 pod=q1-df-parquet-py-8905139f0b309fd7-driver
+INPUT_FORMAT=parquet
+QUERY_ELAPSED_SECONDS=15.434
+
+q1_df_parquet_run3 pod=q1-df-parquet-py-4483929f0b337a22-driver
+INPUT_FORMAT=parquet
+QUERY_ELAPSED_SECONDS=15.804
+
+Parquet median=15.804
+
+--- Conversion (Q1_convert_parquet.py) ---
+PARQUET_OUTPUT=hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/LA_Crime_Data_parquet
+ROW_COUNT=3138128
+
+--- HDFS size (hdfs dfs -du -s -h) ---
+CSV total (2 files): 896.2 MB (608.6 + 287.6 MB)
+Parquet directory: 127.8 MB

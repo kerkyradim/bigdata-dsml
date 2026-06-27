@@ -1,0 +1,339 @@
+26/06/28 01:17:40 WARN Utils: Your hostname, LAPTOP-UV2IKV62 resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+26/06/28 01:17:40 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/06/28 01:17:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/06/28 01:17:52 INFO SparkKubernetesClientFactory: Auto-configuring K8S client using current context from users K8S config file
+26/06/28 01:17:55 INFO KerberosConfDriverFeatureStep: You have not specified a krb5.conf file locally or via a ConfigMap. Make sure that you have the krb5.conf locally on the driver image.
+26/06/28 01:17:57 INFO KubernetesUtils: Uploading file: /home/kerkyra/bigdata-dsml/code/Q1_convert_parquet.py to dest: hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/.spark-upload/spark-upload-622c1201-7993-4a4b-84db-eca2cd8b27cc/Q1_convert_parquet.py...
+26/06/28 01:18:01 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Pending
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: waiting
+		 pending reason: ContainerCreating
+26/06/28 01:18:01 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Pending
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: waiting
+		 pending reason: ContainerCreating
+26/06/28 01:18:01 INFO LoggingPodStatusWatcherImpl: Waiting for application Q1_convert_parquet.py with application ID spark-a75692ced6ac43bdbdb61f41eb21e7c3 and submission ID dsml00289-priv:q1-convert-parquet-py-3e609f9f0b291f49-driver to finish...
+26/06/28 01:18:01 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Pending
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: waiting
+		 pending reason: ContainerCreating
+26/06/28 01:18:02 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Pending)
+26/06/28 01:18:02 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Running
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: running
+		 container started at: 2026-06-27T22:18:01Z
+26/06/28 01:18:03 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:04 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:05 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:06 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:07 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:08 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:09 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:10 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:11 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:12 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:13 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:14 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:15 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:16 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:17 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:18 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:19 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:20 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:21 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:22 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:23 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:24 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:25 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:26 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:27 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:28 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:29 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:30 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:31 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:32 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:33 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:34 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:35 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:36 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:37 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:38 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:39 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:40 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:41 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:42 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:43 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:44 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:45 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:46 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:47 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:48 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:49 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:50 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:51 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:52 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:53 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:54 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:55 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:56 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:57 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:58 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:18:59 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:00 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:01 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:02 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:03 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:04 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:05 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:06 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:07 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:08 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:09 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:10 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:11 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:12 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:13 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:14 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:15 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:16 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:17 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:18 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:19 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:20 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:21 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:22 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:23 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:24 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:25 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:26 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:27 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:28 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:29 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:30 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:31 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:32 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:33 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:34 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:35 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:36 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:37 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:38 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:39 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:40 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:41 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:42 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:43 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:44 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:45 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:46 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:47 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:48 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:49 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:50 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:51 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:52 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:53 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:54 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:55 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:56 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:57 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:58 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:19:59 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:00 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:01 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:02 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:03 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:04 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:05 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:06 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:07 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:08 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:09 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:10 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:11 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:12 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:13 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:14 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:15 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:16 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:17 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:18 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:19 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:20 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:21 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:22 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:23 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:24 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:25 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:26 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:27 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:28 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:29 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:30 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:31 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:32 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:33 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:34 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:35 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:36 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:37 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:38 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:39 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:40 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:41 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:42 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:43 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:44 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:45 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:46 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:47 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:48 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:49 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:50 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:51 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:52 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:53 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:54 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:55 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:56 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:57 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:58 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:20:59 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:00 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:01 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:02 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:03 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:04 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:05 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:06 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:07 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:08 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:09 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:10 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:11 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:12 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:13 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:14 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:15 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:16 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:17 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:17 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Running
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: terminated
+		 container started at: 2026-06-27T22:18:01Z
+		 container finished at: 2026-06-27T22:21:17Z
+		 exit code: 0
+		 termination reason: Completed
+26/06/28 01:21:18 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Running)
+26/06/28 01:21:18 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Running
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: terminated
+		 container started at: 2026-06-27T22:18:01Z
+		 container finished at: 2026-06-27T22:21:17Z
+		 exit code: 0
+		 termination reason: Completed
+26/06/28 01:21:19 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-convert-parquet-py-3e609f9f0b291f49-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-convert-parquet-py, spark-app-selector -> spark-a75692ced6ac43bdbdb61f41eb21e7c3, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: 0ca4c753-cbc0-4c6c-bd2c-94ef63359186
+	 creation time: 2026-06-27T22:18:00Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-xhnzw
+	 node name: termi9
+	 start time: 2026-06-27T22:18:00Z
+	 phase: Succeeded
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: terminated
+		 container started at: 2026-06-27T22:18:01Z
+		 container finished at: 2026-06-27T22:21:17Z
+		 exit code: 0
+		 termination reason: Completed
+26/06/28 01:21:19 INFO LoggingPodStatusWatcherImpl: Application status for spark-a75692ced6ac43bdbdb61f41eb21e7c3 (phase: Succeeded)
+26/06/28 01:21:19 INFO LoggingPodStatusWatcherImpl: Container final statuses:
+
+
+	 container name: spark-kubernetes-driver
+	 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+	 container state: terminated
+	 container started at: 2026-06-27T22:18:01Z
+	 container finished at: 2026-06-27T22:21:17Z
+	 exit code: 0
+	 termination reason: Completed
+26/06/28 01:21:19 INFO LoggingPodStatusWatcherImpl: Application Q1_convert_parquet.py with application ID spark-a75692ced6ac43bdbdb61f41eb21e7c3 and submission ID dsml00289-priv:q1-convert-parquet-py-3e609f9f0b291f49-driver finished
+26/06/28 01:21:19 INFO ShutdownHookManager: Shutdown hook called
+26/06/28 01:21:19 INFO ShutdownHookManager: Deleting directory /tmp/spark-de860e1e-73ba-4866-8d5d-4a995c8cd262

@@ -1,0 +1,25 @@
+q3_df_join_default pod=q3-df-joins-py-a54f629f08ee3fb2-driver
+JOIN_STRATEGY=default
+DETECTED_JOIN_OPERATORS=BroadcastHashJoin
+QUERY_ELAPSED_SECONDS=2.451
+
+q3_df_join_broadcast pod=q3-df-joins-py-0595ab9f08f1aa22-driver
+JOIN_STRATEGY=broadcast
+DETECTED_JOIN_OPERATORS=BroadcastHashJoin
+QUERY_ELAPSED_SECONDS=2.537
+
+q3_df_join_merge pod=q3-df-joins-py-4f34129f08f3fb02-driver
+JOIN_STRATEGY=merge
+DETECTED_JOIN_OPERATORS=SortMergeJoin
+QUERY_ELAPSED_SECONDS=3.359
+
+q3_df_join_shuffle_hash pod=q3-df-joins-py-d6fa5b9f08f63a78-driver
+JOIN_STRATEGY=shuffle_hash
+DETECTED_JOIN_OPERATORS=ShuffledHashJoin
+QUERY_ELAPSED_SECONDS=2.441
+
+q3_df_join_shuffle_replicate_nl pod=q3-df-joins-py-d1f9ca9f08f992c2-driver
+JOIN_STRATEGY=shuffle_replicate_nl
+DETECTED_JOIN_OPERATORS=unknown
+QUERY_ELAPSED_SECONDS=2.368
+

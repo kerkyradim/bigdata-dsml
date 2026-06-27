@@ -1,0 +1,132 @@
+26/06/27 12:03:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/06/27 12:03:33 INFO SparkContext: Running Spark version 3.5.8
+26/06/27 12:03:33 INFO SparkContext: OS info Linux, 6.1.0-47-amd64, amd64
+26/06/27 12:03:33 INFO SparkContext: Java version 11.0.29
+26/06/27 12:03:33 INFO ResourceUtils: ==============================================================
+26/06/27 12:03:33 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/06/27 12:03:33 INFO ResourceUtils: ==============================================================
+26/06/27 12:03:33 INFO SparkContext: Submitted application: Q3 join strategy shuffle_hash - DataFrame
+26/06/27 12:03:33 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 2048, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/06/27 12:03:33 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+26/06/27 12:03:33 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/06/27 12:03:33 INFO SecurityManager: Changing view acls to: spark,dsml00289
+26/06/27 12:03:33 INFO SecurityManager: Changing modify acls to: spark,dsml00289
+26/06/27 12:03:33 INFO SecurityManager: Changing view acls groups to: 
+26/06/27 12:03:33 INFO SecurityManager: Changing modify acls groups to: 
+26/06/27 12:03:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, dsml00289; groups with view permissions: EMPTY; users with modify permissions: spark, dsml00289; groups with modify permissions: EMPTY
+26/06/27 12:03:33 INFO Utils: Successfully started service 'sparkDriver' on port 7078.
+26/06/27 12:03:33 INFO SparkEnv: Registering MapOutputTracker
+26/06/27 12:03:33 INFO SparkEnv: Registering BlockManagerMaster
+26/06/27 12:03:33 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/06/27 12:03:33 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/06/27 12:03:33 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/06/27 12:03:34 INFO DiskBlockManager: Created local directory at /var/data/spark-4fc50b0a-8147-4f27-b1cb-eac96e53a617/blockmgr-27ad5b29-9cd0-460e-9023-4fc8fac4debe
+26/06/27 12:03:34 INFO MemoryStore: MemoryStore started with capacity 1048.8 MiB
+26/06/27 12:03:34 INFO SparkEnv: Registering OutputCommitCoordinator
+26/06/27 12:03:34 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/06/27 12:03:34 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/06/27 12:03:34 INFO SparkKubernetesClientFactory: Auto-configuring K8S client using current context from users K8S config file
+26/06/27 12:03:36 INFO ExecutorPodsAllocator: Going to request 3 executors from Kubernetes for ResourceProfile Id: 0, target: 3, known: 0, sharedSlotFromPendingPods: 2147483647.
+26/06/27 12:03:36 INFO ExecutorPodsAllocator: Found 0 reusable PVCs from 0 PVCs
+26/06/27 12:03:36 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 7079.
+26/06/27 12:03:36 INFO NettyBlockTransferService: Server created on q3-df-joins-py-d6fa5b9f08f63a78-driver-svc.dsml00289-priv.svc 10.233.124.249:7079
+26/06/27 12:03:36 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/06/27 12:03:36 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, q3-df-joins-py-d6fa5b9f08f63a78-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/27 12:03:36 INFO BlockManagerMasterEndpoint: Registering block manager q3-df-joins-py-d6fa5b9f08f63a78-driver-svc.dsml00289-priv.svc:7079 with 1048.8 MiB RAM, BlockManagerId(driver, q3-df-joins-py-d6fa5b9f08f63a78-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/27 12:03:36 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, q3-df-joins-py-d6fa5b9f08f63a78-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/27 12:03:36 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, q3-df-joins-py-d6fa5b9f08f63a78-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/27 12:03:36 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/27 12:03:36 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/27 12:03:36 INFO SingleEventLogFileWriter: Logging events to hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/logs/spark-fa2c6bdc212f44d0b204c2c50a4bfd76.inprogress
+26/06/27 12:03:37 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/27 12:03:41 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.126.66:47920
+26/06/27 12:03:41 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.98.142:43720
+26/06/27 12:03:41 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.101.191:40488
+26/06/27 12:03:42 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.126.66:47922) with ID 1,  ResourceProfileId 0
+26/06/27 12:03:42 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.98.142:43726) with ID 3,  ResourceProfileId 0
+26/06/27 12:03:42 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.126.66:45709 with 1048.8 MiB RAM, BlockManagerId(1, 10.233.126.66, 45709, None)
+26/06/27 12:03:42 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.98.142:37839 with 1048.8 MiB RAM, BlockManagerId(3, 10.233.98.142, 37839, None)
+26/06/27 12:03:42 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.101.191:40490) with ID 2,  ResourceProfileId 0
+26/06/27 12:03:42 INFO KubernetesClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+26/06/27 12:03:42 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.101.191:46091 with 1048.8 MiB RAM, BlockManagerId(2, 10.233.101.191, 46091, None)
+JOIN_STRATEGY=shuffle_hash
+DETECTED_JOIN_OPERATORS=ShuffledHashJoin
+=== EXPLAIN FORMATTED ===
+== Physical Plan ==
+AdaptiveSparkPlan (12)
++- Sort (11)
+   +- Exchange (10)
+      +- Project (9)
+         +- ShuffledHashJoin Inner BuildRight (8)
+            :- Exchange (3)
+            :  +- Filter (2)
+            :     +- Scan ExistingRDD (1)
+            +- Exchange (7)
+               +- Project (6)
+                  +- Filter (5)
+                     +- Scan csv  (4)
+
+
+(1) Scan ExistingRDD
+Output [3]: [zip_code#22, total_population#23L, total_housing_units#24L]
+Arguments: [zip_code#22, total_population#23L, total_housing_units#24L], MapPartitionsRDD[17] at applySchemaToPythonRDD at NativeMethodAccessorImpl.java:0, ExistingRDD, UnknownPartitioning(0)
+
+(2) Filter
+Input [3]: [zip_code#22, total_population#23L, total_housing_units#24L]
+Condition : isnotnull(zip_code#22)
+
+(3) Exchange
+Input [3]: [zip_code#22, total_population#23L, total_housing_units#24L]
+Arguments: hashpartitioning(zip_code#22, 200), ENSURE_REQUIREMENTS, [plan_id=76]
+
+(4) Scan csv 
+Output [2]: [Zip Code#45, Estimated Median Income#47]
+Batched: false
+Location: InMemoryFileIndex [hdfs://hdfs-namenode.default.svc.cluster.local:9000/data/LA_income_2021.csv]
+PushedFilters: [IsNotNull(Zip Code)]
+ReadSchema: struct<Zip Code:string,Estimated Median Income:string>
+
+(5) Filter
+Input [2]: [Zip Code#45, Estimated Median Income#47]
+Condition : isnotnull(Zip Code#45)
+
+(6) Project
+Output [2]: [Zip Code#45 AS zip_code#51, cast(regexp_replace(Estimated Median Income#47, [$,], , 1) as double) AS median_household_income#60]
+Input [2]: [Zip Code#45, Estimated Median Income#47]
+
+(7) Exchange
+Input [2]: [zip_code#51, median_household_income#60]
+Arguments: hashpartitioning(zip_code#51, 200), ENSURE_REQUIREMENTS, [plan_id=77]
+
+(8) ShuffledHashJoin
+Left keys [1]: [zip_code#22]
+Right keys [1]: [zip_code#51]
+Join type: Inner
+Join condition: None
+
+(9) Project
+Output [5]: [zip_code#22, total_population#23L, total_housing_units#24L, median_household_income#60, round(((median_household_income#60 * cast(total_housing_units#24L as double)) / cast(total_population#23L as double)), 2) AS avg_annual_per_capita_income#71]
+Input [5]: [zip_code#22, total_population#23L, total_housing_units#24L, zip_code#51, median_household_income#60]
+
+(10) Exchange
+Input [5]: [zip_code#22, total_population#23L, total_housing_units#24L, median_household_income#60, avg_annual_per_capita_income#71]
+Arguments: rangepartitioning(zip_code#22 ASC NULLS FIRST, 200), ENSURE_REQUIREMENTS, [plan_id=81]
+
+(11) Sort
+Input [5]: [zip_code#22, total_population#23L, total_housing_units#24L, median_household_income#60, avg_annual_per_capita_income#71]
+Arguments: [zip_code#22 ASC NULLS FIRST], true, 0
+
+(12) AdaptiveSparkPlan
+Output [5]: [zip_code#22, total_population#23L, total_housing_units#24L, median_household_income#60, avg_annual_per_capita_income#71]
+Arguments: isFinalPlan=false
+
+
+
+('90001', 55859, 52806.0, 13064.66)
+('90002', 53150, 46159.0, 11321.33)
+('90003', 72764, 47733.0, 11968.02)
+('90004', 58585, 54947.0, 23395.03)
+('90005', 37987, 44913.0, 22134.32)
+... (282 ZIP codes total)
+QUERY_ELAPSED_SECONDS=2.441
+Saved to: hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/Q3_df_join_shuffle_hash_spark-fa2c6bdc212f44d0b204c2c50a4bfd76

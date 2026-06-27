@@ -1,0 +1,180 @@
+26/06/28 01:25:51 WARN Utils: Your hostname, LAPTOP-UV2IKV62 resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+26/06/28 01:25:51 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/06/28 01:26:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/06/28 01:26:03 INFO SparkKubernetesClientFactory: Auto-configuring K8S client using current context from users K8S config file
+26/06/28 01:26:24 INFO KerberosConfDriverFeatureStep: You have not specified a krb5.conf file locally or via a ConfigMap. Make sure that you have the krb5.conf locally on the driver image.
+26/06/28 01:26:44 INFO KubernetesUtils: Uploading file: /home/kerkyra/bigdata-dsml/code/Q1_df_parquet.py to dest: hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/.spark-upload/spark-upload-daf64cc1-450f-4760-8f32-77768809c655/Q1_df_parquet.py...
+26/06/28 01:26:51 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Pending
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: waiting
+		 pending reason: ContainerCreating
+26/06/28 01:26:51 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Pending
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: waiting
+		 pending reason: ContainerCreating
+26/06/28 01:26:51 INFO LoggingPodStatusWatcherImpl: Waiting for application Q1_df_parquet.py with application ID spark-bdebbbd676914786a2991a4f15e2f897 and submission ID dsml00289-priv:q1-df-parquet-py-8905139f0b309fd7-driver to finish...
+26/06/28 01:26:52 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Pending
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: waiting
+		 pending reason: ContainerCreating
+26/06/28 01:26:52 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Pending)
+26/06/28 01:26:53 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Running
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: running
+		 container started at: 2026-06-27T22:26:52Z
+26/06/28 01:26:53 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:26:54 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:26:55 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:26:56 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:26:57 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:26:58 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:26:59 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:00 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:01 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:02 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:03 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:04 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:05 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:06 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:07 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:08 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:09 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:10 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:11 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:12 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:13 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:14 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:15 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:16 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:17 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:18 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:19 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:20 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:21 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:22 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:23 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:24 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:25 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:26 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:27 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:28 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:29 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Running
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: terminated
+		 container started at: 2026-06-27T22:26:52Z
+		 container finished at: 2026-06-27T22:27:26Z
+		 exit code: 0
+		 termination reason: Completed
+26/06/28 01:27:29 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Running
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: terminated
+		 container started at: 2026-06-27T22:26:52Z
+		 container finished at: 2026-06-27T22:27:26Z
+		 exit code: 0
+		 termination reason: Completed
+26/06/28 01:27:29 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Running)
+26/06/28 01:27:30 INFO LoggingPodStatusWatcherImpl: State changed, new state: 
+	 pod name: q1-df-parquet-py-8905139f0b309fd7-driver
+	 namespace: dsml00289-priv
+	 labels: spark-app-name -> q1-df-parquet-py, spark-app-selector -> spark-bdebbbd676914786a2991a4f15e2f897, spark-role -> driver, spark-version -> 3.5.8
+	 pod uid: cf8a1fd0-c3d3-464e-848f-c978700b994c
+	 creation time: 2026-06-27T22:26:50Z
+	 service account name: spark
+	 volumes: hadoop-properties, spark-local-dir-1, spark-conf-volume-driver, kube-api-access-s9vfd
+	 node name: termi8
+	 start time: 2026-06-27T22:26:50Z
+	 phase: Succeeded
+	 container status: 
+		 container name: spark-kubernetes-driver
+		 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+		 container state: terminated
+		 container started at: 2026-06-27T22:26:52Z
+		 container finished at: 2026-06-27T22:27:26Z
+		 exit code: 0
+		 termination reason: Completed
+26/06/28 01:27:30 INFO LoggingPodStatusWatcherImpl: Application status for spark-bdebbbd676914786a2991a4f15e2f897 (phase: Succeeded)
+26/06/28 01:27:30 INFO LoggingPodStatusWatcherImpl: Container final statuses:
+
+
+	 container name: spark-kubernetes-driver
+	 container image: docker.io/apache/spark:3.5.8-scala2.12-java11-python3-ubuntu
+	 container state: terminated
+	 container started at: 2026-06-27T22:26:52Z
+	 container finished at: 2026-06-27T22:27:26Z
+	 exit code: 0
+	 termination reason: Completed
+26/06/28 01:27:31 INFO LoggingPodStatusWatcherImpl: Application Q1_df_parquet.py with application ID spark-bdebbbd676914786a2991a4f15e2f897 and submission ID dsml00289-priv:q1-df-parquet-py-8905139f0b309fd7-driver finished
+26/06/28 01:27:31 INFO ShutdownHookManager: Shutdown hook called
+26/06/28 01:27:31 INFO ShutdownHookManager: Deleting directory /tmp/spark-a752875e-b65c-4a3b-945b-6ad2abf24934

@@ -1,0 +1,36 @@
+
+----Query times for q1_df (without specs)----
+q1_df_default pod=q1-df-py-d2632a9eeee943ad-driver
+QUERY_ELAPSED_SECONDS=99.629
+
+----Query times for q1_df (with specs (2 exec, 1 core, 2g))----
+q1_df_2exec_run1 pod=q1-df-py-78b0239eeeec5f34-driver
+QUERY_ELAPSED_SECONDS=63.576
+q1_df_2exec_run2 pod=q1-df-py-cb8d449eeeee52ac-driver
+QUERY_ELAPSED_SECONDS=86.606
+q1_df_2exec_run3 pod=q1-df-py-ff9ed29eeef077e5-driver
+QUERY_ELAPSED_SECONDS=56.607
+
+----Query times for q1_df_udf (without specs)----
+q1_df_udf_default pod=q1-df-udf-py-d054ec9eeef23113-driver
+QUERY_ELAPSED_SECONDS=108.224
+
+----Query times for q1_df_udf (with specs (2 exec, 1 core, 2g))----
+q1_df_udf_2exec_run1 pod=q1-df-udf-py-d492de9eeef51760-driver
+QUERY_ELAPSED_SECONDS=78.360
+q1_df_udf_2exec_run2 pod=q1-df-udf-py-ab38399eeef791ad-driver
+QUERY_ELAPSED_SECONDS=72.170
+q1_df_udf_2exec_run3 pod=q1-df-udf-py-c559b99eeef9f65a-driver
+QUERY_ELAPSED_SECONDS=61.139
+
+----Query times for q1_rdd (without specs)----
+q1_rdd_default pod=q1-rdd-py-6466b89eeefbddcb-driver
+QUERY_ELAPSED_SECONDS=60.023
+
+----Query times for q1_rdd (with specs (2 exec, 1 core, 2g))----
+q1_rdd_2exec_run1 pod=q1-rdd-py-29a6269eeefd9451-driver
+QUERY_ELAPSED_SECONDS=24.166
+q1_rdd_2exec_run2 pod=q1-rdd-py-2c745c9eeefea79c-driver
+QUERY_ELAPSED_SECONDS=53.960
+q1_rdd_2exec_run3 pod=q1-rdd-py-a4159c9eef005ed9-driver
+QUERY_ELAPSED_SECONDS=61.125

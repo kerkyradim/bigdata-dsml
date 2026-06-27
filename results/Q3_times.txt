@@ -1,0 +1,14 @@
+q3_df_default pod=q3-df-py-cc3eee9f08d4d109-driver
+q3_df_3exec_run1 pod=q3-df-py-a2db689f08d7f745-driver
+QUERY_ELAPSED_SECONDS=40.814
+q3_df_3exec_run2 pod=q3-df-py-61c0539f08d95d07-driver
+QUERY_ELAPSED_SECONDS=42.944
+q3_df_3exec_run3 pod=q3-df-py-4f847d9f08dad7a1-driver
+QUERY_ELAPSED_SECONDS=51.926
+q3_rdd_default pod=q3-rdd-py-946cb59f08dc7a82-driver
+q3_rdd_3exec_run1 pod=q3-rdd-py-990ae69f08dfb0f3-driver
+QUERY_ELAPSED_SECONDS=52.352
+q3_rdd_3exec_run2 pod=q3-rdd-py-a691dc9f08e16107-driver
+QUERY_ELAPSED_SECONDS=54.620
+q3_rdd_3exec_run3 pod=q3-rdd-py-6a4fd99f08e34257-driver
+QUERY_ELAPSED_SECONDS=48.288

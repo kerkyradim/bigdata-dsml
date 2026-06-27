@@ -1,0 +1,53 @@
+26/06/22 10:57:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/06/22 10:57:15 INFO SparkContext: Running Spark version 3.5.8
+26/06/22 10:57:15 INFO SparkContext: OS info Linux, 6.1.0-48-amd64, amd64
+26/06/22 10:57:15 INFO SparkContext: Java version 11.0.29
+26/06/22 10:57:15 INFO ResourceUtils: ==============================================================
+26/06/22 10:57:15 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/06/22 10:57:15 INFO ResourceUtils: ==============================================================
+26/06/22 10:57:15 INFO SparkContext: Submitted application: Q1 street crime by day part - DataFrame + UDF
+26/06/22 10:57:15 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 2048, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/06/22 10:57:15 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+26/06/22 10:57:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/06/22 10:57:15 INFO SecurityManager: Changing view acls to: spark,dsml00289
+26/06/22 10:57:15 INFO SecurityManager: Changing modify acls to: spark,dsml00289
+26/06/22 10:57:15 INFO SecurityManager: Changing view acls groups to: 
+26/06/22 10:57:15 INFO SecurityManager: Changing modify acls groups to: 
+26/06/22 10:57:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, dsml00289; groups with view permissions: EMPTY; users with modify permissions: spark, dsml00289; groups with modify permissions: EMPTY
+26/06/22 10:57:15 INFO Utils: Successfully started service 'sparkDriver' on port 7078.
+26/06/22 10:57:15 INFO SparkEnv: Registering MapOutputTracker
+26/06/22 10:57:15 INFO SparkEnv: Registering BlockManagerMaster
+26/06/22 10:57:15 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/06/22 10:57:15 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/06/22 10:57:15 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/06/22 10:57:15 INFO DiskBlockManager: Created local directory at /var/data/spark-a3d9ddee-1ec3-4402-898a-efdb076656cf/blockmgr-a5227f3d-a097-4467-bb29-978408832c51
+26/06/22 10:57:16 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+26/06/22 10:57:16 INFO SparkEnv: Registering OutputCommitCoordinator
+26/06/22 10:57:16 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/06/22 10:57:16 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/06/22 10:57:16 INFO SparkKubernetesClientFactory: Auto-configuring K8S client using current context from users K8S config file
+26/06/22 10:57:18 INFO ExecutorPodsAllocator: Going to request 2 executors from Kubernetes for ResourceProfile Id: 0, target: 2, known: 0, sharedSlotFromPendingPods: 2147483647.
+26/06/22 10:57:18 INFO ExecutorPodsAllocator: Found 0 reusable PVCs from 0 PVCs
+26/06/22 10:57:18 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 7079.
+26/06/22 10:57:18 INFO NettyBlockTransferService: Server created on q1-df-udf-py-c559b99eeef9f65a-driver-svc.dsml00289-priv.svc 10.233.126.85:7079
+26/06/22 10:57:18 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/06/22 10:57:18 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, q1-df-udf-py-c559b99eeef9f65a-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/22 10:57:18 INFO BlockManagerMasterEndpoint: Registering block manager q1-df-udf-py-c559b99eeef9f65a-driver-svc.dsml00289-priv.svc:7079 with 413.9 MiB RAM, BlockManagerId(driver, q1-df-udf-py-c559b99eeef9f65a-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/22 10:57:18 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, q1-df-udf-py-c559b99eeef9f65a-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/22 10:57:18 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, q1-df-udf-py-c559b99eeef9f65a-driver-svc.dsml00289-priv.svc, 7079, None)
+26/06/22 10:57:18 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/22 10:57:18 INFO BasicExecutorFeatureStep: Decommissioning not enabled, skipping shutdown script
+26/06/22 10:57:18 INFO SingleEventLogFileWriter: Logging events to hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/logs/spark-a4ed7212cc034d1080e9f9452266bfbc.inprogress
+26/06/22 10:57:23 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.124.219:57004
+26/06/22 10:57:23 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: No executor found for 10.233.126.119:40642
+26/06/22 10:57:24 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.124.219:57012) with ID 1,  ResourceProfileId 0
+26/06/22 10:57:24 INFO KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.233.126.119:40644) with ID 2,  ResourceProfileId 0
+26/06/22 10:57:24 INFO KubernetesClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+26/06/22 10:57:24 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.124.219:33533 with 1048.8 MiB RAM, BlockManagerId(1, 10.233.124.219, 33533, None)
+26/06/22 10:57:24 INFO BlockManagerMasterEndpoint: Registering block manager 10.233.126.119:37703 with 1048.8 MiB RAM, BlockManagerId(2, 10.233.126.119, 37703, None)
+('Night', 251094, 34.08)
+('Evening', 198292, 26.92)
+('Afternoon', 156432, 21.23)
+('Morning', 130866, 17.76)
+QUERY_ELAPSED_SECONDS=61.139
+Saved to: hdfs://hdfs-namenode.default.svc.cluster.local:9000/user/dsml00289/Q1_df_udf_spark-a4ed7212cc034d1080e9f9452266bfbc

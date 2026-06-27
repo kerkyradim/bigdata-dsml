@@ -1,0 +1,24 @@
+
+----Query times for q2_df (without specs)----
+q2_df_default pod=q2-df-py-93a44f9f085d8cf8-driver
+QUERY_ELAPSED_SECONDS=57.222
+
+----Query times for q2_df (with specs (4 exec, 1 core, 2g))----
+q2_df_4exec_run1 pod=q2-df-py-8d30e79f086042a7-driver
+QUERY_ELAPSED_SECONDS=50.235
+q2_df_4exec_run2 pod=q2-df-py-1bc2789f08625150-driver
+QUERY_ELAPSED_SECONDS=54.572
+q2_df_4exec_run3 pod=q2-df-py-2e9eb09f08664abc-driver
+QUERY_ELAPSED_SECONDS=55.339
+
+----Query times for q2_sql (without specs)----
+q2_sql_default pod=q2-sql-py-3285889f086a7016-driver
+QUERY_ELAPSED_SECONDS=50.656
+
+----Query times for q2_sql (with specs (4 exec, 1 core, 2g))----
+q2_sql_4exec_run1 pod=q2-sql-py-81afe49f086d931f-driver
+QUERY_ELAPSED_SECONDS=53.790
+q2_sql_4exec_run2 pod=q2-sql-py-035fb49f08702fa3-driver
+QUERY_ELAPSED_SECONDS=52.798
+q2_sql_4exec_run3 pod=q2-sql-py-82cc1b9f08728c49-driver
+QUERY_ELAPSED_SECONDS=48.194
