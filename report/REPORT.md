@@ -4,7 +4,7 @@
 **Α.Μ.:** dsml00289  
 **Μάθημα:** Διαχείριση Δεδομένων Μεγάλης Κλίμακας  
 **Περιβάλλον:** Apache Spark 3.5.8, Kubernetes (lab cluster), HDFS  
-**Αποθετήριο κώδικα:** https://github.com/kerkyra/dsml00289-bigdata
+**Αποθετήριο κώδικα:** https://github.com/kerkyradim/kerkyradim
 
 ---
 
