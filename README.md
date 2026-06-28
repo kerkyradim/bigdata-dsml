@@ -46,7 +46,7 @@ dsml00289-bigdata/
 
 ```bash
 source ~/bigdata-env.sh
-cd ~/dsml00289-bigdata   # clone αυτού του repo
+cd ~/dsml00289-bigdata   
 
 spark-submit \
   --conf spark.executor.instances=2 \
